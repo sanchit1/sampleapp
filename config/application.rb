@@ -34,6 +34,8 @@ module Sampleapp
     # JavaScript files you want as :defaults (application.js is always included).
     # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
 
+config.secret_token = '732b793db675d454248f2616fa43c9ec3f987117923e79e6dadd7fa5f251dbbc83aaf8a763ec9e4b211cdc8e1827db992dab3eecb88e264a95e5bae521471804'
+
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 

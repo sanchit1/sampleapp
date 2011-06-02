@@ -7,7 +7,7 @@ gem 'rails', '3.0.7'
 gem 'gravatar_image_tag', '0.1.0'
 
 gem 'sqlite3'
-gem 'devise','1.1.rc0'
+
 gem 'factory_girl_rails', '1.0'
 
 # Use unicorn as the web server
