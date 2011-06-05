@@ -1,7 +1,7 @@
 <h1>Sign up</h1>
 <%= form_for(@user) do |f| %>
 
-<%= render 'shared/error_messages' %>
+<%= render 'shared/error_messages', :object => f.object %>
 <div class="field">
 <%= f.label :name %><br />
 <%= f.text_field :name %>
@@ -18,6 +18,30 @@
 <%= f.label :password_confirmation, "Confirmation" %><br />
 <%= f.password_field :password_confirmation %>
 </div>
+<div class="field">
+<label for="user_rollno">Roll No</label><br />
+<input id="user_rollno" name="user[rollno]" size="10" />
+</div>
+
+<div class="field">
+<label for="user_department">Department</label><br />
+
+<select id="user_department" name="user[department]">
+  <option value="Aerospace Engineering">Aerospace Engineering</option>
+  <option value="Biological Sciences and Bioengineering">Biological Sciences and Bioengineering</option>
+  <option value="Chemical Engineering">Chemical Engineering</option>
+  <option value="Civil Engineering">Civil Engineering</option>
+
+<option value="Computer Science and Engineering">Computer Science and Engineering</option>
+  <option value="Electrical Engineering">Electrical Engineering</option>
+  <option value="Industrial and Management Engineering">Chemical Engineering</option>
+  <option value="Material Science and Engineering">Material Science and Engineering</option>
+ <option value="Mechanical Engineering">Mechanical Engineering</option>
+
+
+
+
+</select>
 <div class="actions">
 <%= f.submit "Sign up" %>
 </div>

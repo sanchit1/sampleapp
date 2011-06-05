@@ -1,15 +1,16 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :lockable, :timeoutable and :activatable
-email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+email_regex = /\A[\w+\-.]+@iitk.ac.in/i
 
 
 attr_accessor :password
-attr_accessible :name, :email, :password, :password_confirmation
+attr_accessible :name, :email, :password, :password_confirmation,:rollno,:department,:cn1,
+:cn2,:cn3,:cn4,:cn5,:cn6,:cn7
 
-validates :email, :presence => true,
-:format => { :with => email_regex }
-
+validates :email, :presence =>{:message=> "can't be blank"},:uniqueness => { :case_sensitive => false }
+validates:email, :format => { :with => email_regex ,:message=>"id of IITK should be used "} 
+validates :rollno,:presence=> true
 validates :name, :presence => true,
 :length => { :maximum => 50 }
 

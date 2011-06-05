@@ -1,0 +1,61 @@
+<h1>Edit Profile</h1>
+<%= form_for(@user) do |f| %>
+<%= render 'shared/error_messages', :object => f.object %>
+<div class="field">
+<%= f.label :name %><br />
+<%= f.text_field :name %>
+</div>
+<div class="field">
+<%= f.label :email %><br />
+<%= f.text_field :email %>
+</div>
+<div class="field">
+<%= f.label :password %><br />
+<%= f.password_field :password %>
+</div>
+<div class="field">
+<%= f.label :password_confirmation, "Confirmation" %><br />
+<%= f.password_field :password_confirmation %>
+</div>
+<div class="field">
+<%= f.label :cn1, "Course No.1" %><br />
+<%= f.text_field :cn1 %>
+</div>
+<div class="field">
+
+<div class="field">
+<%= f.label :cn2, "Course No.2" %><br />
+<%= f.text_field :cn2 %>
+</div>
+<div class="field">
+<%= f.label :cn3, "Course No.3" %><br />
+<%= f.text_field :cn3 %>
+</div>
+<div class="field">
+<%= f.label :cn4, "Course No.4" %><br />
+<%= f.text_field :cn4 %>
+</div>
+<div class="field">
+<%= f.label :cn5, "Course No.5" %><br />
+<%= f.text_field :cn5 %>
+</div>
+<div class="field">
+<%= f.label :cn6, "Course No.6" %><br />
+<%= f.text_field :cn6 %>
+</div>
+<div class="field">
+<%= f.label :cn7, "Course No.7" %><br />
+<%= f.text_field :cn7 %>
+</div>
+
+
+
+
+<div class="actions">
+<%= f.submit "Update" %>
+</div>
+<% end %>
+<div>
+<%= gravatar_for @user %>
+<a href="http://gravatar.com/emails">change</a>
+</div>

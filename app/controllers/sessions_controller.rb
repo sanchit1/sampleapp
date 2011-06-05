@@ -15,11 +15,15 @@ sign_in user
 redirect_to user
 end
 
-
-
-
 end
-
+def index
+@title = "All users"
+@users = User.all
+end
+def show
+@user = User.find(params[:id])
+@title = @user.name
+end
 def destroy
 sign_out
 redirect_to root_path

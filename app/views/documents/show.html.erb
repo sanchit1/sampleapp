@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Parent:</b>
+  <%= @document.parent_id %>
+</p>
+
+<p>
+  <b>Content type:</b>
+  <%= @document.content_type %>
+</p>
+
+<p>
+  <b>Filename:</b>
+  <%= @document.filename %>
+</p>
+
+<p>
+  <b>Size:</b>
+  <%= @document.size %>
+</p>
+
+<p>
+  <b>Attachable:</b>
+  <%= @document.attachable_id %>
+</p>
+
+<p>
+  <b>Attachable type:</b>
+  <%= @document.attachable_type %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @document.title %>
+</p>
+
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %>

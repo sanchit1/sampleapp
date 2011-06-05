@@ -8,6 +8,7 @@ gem 'gravatar_image_tag', '0.1.0'
 
 gem 'sqlite3'
 
+
 gem 'factory_girl_rails', '1.0'
 
 # Use unicorn as the web server

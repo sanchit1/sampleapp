@@ -1,14 +1,43 @@
 <table class="profile" summary="Profile information">
 <tr>
+
+
+
+
+
+
 <td class="main">
+
+
+
 <h1>
 <%= gravatar_for @user %>
 <%= @user.name %>
 </h1>
 </td>
-<td class="sidebar round">
-<strong>Name</strong> <%= @user.name %><br />
-<strong>URL</strong> <%= link_to user_path(@user), @user %>
+<td class="sidebar" >
+<strong> <font size="4"><b>Name: </strong> <%= @user.name %></font></b><br />
+
+<strong><font size="4"><b>Roll No: </strong> <%= @user.rollno %></font></b><br />
+<strong><font size="4"><b>Department: </strong> <%= @user.department %></font></b><br />
+<%=params[:id]%>
+<strong><font size="4"><b>Courses: </strong> </font></b><br />
+<ul>
+<li><a href="/users/<%=params[:id]%>/course1"><%=@user.cn1%></a></li>
+<li><a href="/users/<%=params[:id]%>/course2"><%=@user.cn2%></a></li>
+<li><a href="/users/<%=params[:id]%>/course3"><%=@user.cn3%></a></li>
+<li><a href="/users/<%=params[:id]%>/course4"><%=@user.cn4%></a></li>
+<li><a href="/users/<%=params[:id]%>/course5"><%=@user.cn5%></a></li>
+<li><a href="/users/<%=params[:id]%>/course6"><%=@user.cn6%></a></li>
+<li><a href="/users/<%=params[:id]%>/course7"><%=@user.cn7%></a></li>
+</ul>
+
+
+
+
+
+
+
 </td>
 </tr>
 </table>

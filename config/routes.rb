@@ -1,12 +1,27 @@
 Sampleapp::Application.routes.draw do
   
 
+  resources :documents
+
   get "sessions/new"
 
 resources :users
-get 'users/new'
 
-  
+
+
+
+
+
+resources :sessions, :only => [:new, :create, :destroy]
+get 'users/new'
+match '/users/:id/course1', :to=>'users#course1'
+match '/users/:id/course2', :to=>'users#course2'
+match '/users/:id/course3', :to=>'users#course3'
+match '/users/:id/course4', :to=>'users#course4'
+match '/users/:id/course5', :to=>'users#course5'
+match '/users/:id/course6', :to=>'users#course6'
+match '/users/:id/course7', :to=>'users#course7'
+  match '/developers', :to=>'pages#developers'
 
   match '/contact', :to=>'pages#contact'
 match '/about', :to=>'pages#about'

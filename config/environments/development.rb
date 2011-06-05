@@ -6,7 +6,12 @@ Sampleapp::Application.configure do
   # since you don't have to restart the webserver when you make code changes.
   config.cache_classes = false
 
-  # Log error messages when you accidentally call methods on nil.
+
+config.action_mailer.delivery_method = :sendmail
+  
+
+
+# Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
 
   # Show full error reports and disable caching
@@ -22,5 +27,6 @@ config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
 end
 

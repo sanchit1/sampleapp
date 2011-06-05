@@ -74,7 +74,8 @@ margin-bottom: -15px;
 7.4: 710px;
 }
 body {
-background: #cff;
+/*background: #cff;*/
+background-image:url('b.jpg');
 }
 header {
 padding-top: 20px;
@@ -158,16 +159,18 @@ float: none;
 
 /* User show page */
 table.profile {
-width: 100%;
+width: 70%;
 margin-bottom: 0;
 }
 td.main {
-width: 70%;
+width: 30%;
 padding: 1em;
 }
 td.sidebar {
-width: 30%;
+width: 80%;
 padding: 1em;
+margin-left:auto;
+margin-right:auto;
 vertical-align: top;
 background: #ffc;
 }
@@ -176,7 +179,12 @@ border: 1px solid #999;
 margin-bottom: -15px;
 }
 
-
+ul.users {
+margin-top: 1em;
+}
+.users li {
+list-style: none;
+}
 
 
 

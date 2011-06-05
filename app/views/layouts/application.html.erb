@@ -1,7 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Ruby on Rails Tutorial Sample App | <%=@title %></title>
+
+
+ 
+<script language="javaScript">
+var pos=0;
+var str="Lec Pool-Platform for all IIT-k Lectures | <%=@title %>  ";
+// npos is used for forward scrolling
+var npos=str.length;
+// Normal upDate(). Other options upDateFW() and upDateWD()
+setInterval("upDate()",300);
+ 
+// Normal Scroll
+function upDate()
+{
+  // Reset the title starting at pos
+  document.title=str.substring(pos,str.length)+str.substring(0,pos);
+  if(pos < str.length) pos++;
+  else pos = 0;
+}
+ 
+// Scroll forward
+function upDateFW()
+{
+  // Reset the title starting at pos
+  document.title=str.substring(npos,str.length)+str.substring(0,npos);
+  if(npos > 0) npos--;
+  else npos = str.length;
+}
+ 
+// Scroll With Delay
+var delay = 20;
+function upDateWD()
+{
+  if(pos < str.length) {
+    document.title=str.substring(pos,str.length)+str.substring(0,pos);
+  }  else {
+    if(pos > str.length+delay) {
+      pos = 0;
+    }
+  }
+  pos++;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title id="title" class="title"> Lec Pool-Platform for all IIT-k Lectures | <%=@title %></title>
 <%= csrf_meta_tag %>
 <%=render 'layouts/stylesheets'%>
 </head>
