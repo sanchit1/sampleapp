@@ -11,8 +11,8 @@
 
 
 <h1>
-<%= gravatar_for @user %>
-<%= @user.name %>
+<%= image_tag @user.image_url(:thumb) if @user.image? %>
+
 </h1>
 </td>
 <td class="sidebar" >
@@ -20,7 +20,7 @@
 
 <strong><font size="4"><b>Roll No: </strong> <%= @user.rollno %></font></b><br />
 <strong><font size="4"><b>Department: </strong> <%= @user.department %></font></b><br />
-<%=params[:id]%>
+
 <strong><font size="4"><b>Courses: </strong> </font></b><br />
 <ul>
 <li><a href="/users/<%=params[:id]%>/course1"><%=@user.cn1%></a></li>

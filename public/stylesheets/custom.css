@@ -1,81 +1,9 @@
-
-
-
-.field_with_errors {
-margin-top: 10px;
-padding: 2px;
-background-color: red;
-display: table;
-}
-.field_with_errors label {
-color: #fff;
-}
-#error_explanation {
-width: 400px;
-border: 2px solid red;
-padding: 7px;
-padding-bottom: 12px;
-margin-bottom: 20px;
-background-color: #f0f0f0;
-}
-#error_explanation h2 {
-text-align: left;
-font-weight: bold;
-padding: 5px 5px 5px 15px;
-font-size: 12px;
-margin: -7px;
-background-color: #c00;
-color: #fff;
-}
-#error_explanation p {
-color: #333;
-margin-bottom: 0;
-padding: 5px;
-}
-#error_explanation ul li {
-font-size: 12px;
-list-style: square;
-}-bottom: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
-widthdth: 100%;
-margin-bottom: 0;
+width: 700px;
 }
-td.main {
-width: 70%;
-padding: 1em;
-}
-td.sidebar {
-width: 30%;
-padding: 1em;
-vertical-align: top;
-background: #ffc;
-}
-.profile img.gravatar {
-border: 1px solid #999;
-margin-bottom: -15px;
-}
-7.4: 710px;
-}
-body {
-/*background: #cff;*/
-background-image:url('b.jpg');
+body {background-image:url('../images/11111.jpg');
+ background-repeat:no-repeat;
+ 
 }
 header {
 padding-top: 20px;
@@ -86,6 +14,7 @@ background: #fff;
 }
 section {
 margin-top: 1em;
+margin-left:70px;
 font-size: 120%;
 padding: 20px;
 background: #fff;
@@ -101,6 +30,9 @@ text-decoration: none;
 a:hover {
 color: #069;
 text-decoration: underline;
+}
+a:visited {
+color: #069;
 }
 nav {
 float: right;
@@ -128,7 +60,8 @@ color: #09c;
 }
 nav ul li a:hover {
 text-decoration: underline;
-}a.signup_button {
+}
+a.signup_button {
 margin-left: auto;
 margin-right: auto;
 display: block;
@@ -139,61 +72,19 @@ background: #006400;
 font-size: 150%;
 font-weight: bold;
 padding: 20px;
-}.round {
+}
+.round {
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 border-radius: 10px;
-}footer {
+}
+footer {
 text-align: center;
 margin-top: 10px;
 width: 710px;
-margin-left: auto;
+margin-left: 35px;
 margin-right: auto;
 }
 footer nav {
 float: none;
 }
-
-
-
-
-/* User show page */
-table.profile {
-width: 70%;
-margin-bottom: 0;
-}
-td.main {
-width: 30%;
-padding: 1em;
-}
-td.sidebar {
-width: 80%;
-padding: 1em;
-margin-left:auto;
-margin-right:auto;
-vertical-align: top;
-background: #ffc;
-}
-.profile img.gravatar {
-border: 1px solid #999;
-margin-bottom: -15px;
-}
-
-ul.users {
-margin-top: 1em;
-}
-.users li {
-list-style: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-

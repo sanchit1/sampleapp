@@ -1,5 +1,6 @@
 <h1>Sign up</h1>
-<%= form_for(@user) do |f| %>
+<%= form_for @user, :html => {:multipart => true} do |f| %>
+
 
 <%= render 'shared/error_messages', :object => f.object %>
 <div class="field">
@@ -37,7 +38,15 @@
   <option value="Industrial and Management Engineering">Chemical Engineering</option>
   <option value="Material Science and Engineering">Material Science and Engineering</option>
  <option value="Mechanical Engineering">Mechanical Engineering</option>
+</div>
 
+<div class="field">
+    <%= f.file_field :image %></br>
+</div>
+<div class="field">
+    <%= f.label :remote_image_url, "Or image URL" %><br />
+    <%= f.text_field :remote_image_url %>
+</div>
 
 
 

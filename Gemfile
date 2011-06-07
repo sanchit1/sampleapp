@@ -7,6 +7,8 @@ gem 'rails', '3.0.7'
 gem 'gravatar_image_tag', '0.1.0'
 
 gem 'sqlite3'
+gem "rmagick"
+gem "carrierwave"
 
 
 gem 'factory_girl_rails', '1.0'
